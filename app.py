@@ -17,7 +17,7 @@ import tensorflow as tf
 
 app = Flask(__name__)
 cors = CORS(app)
-model = pickle.load(open('finalized_model.sav', 'rb'))
+model = pickle.load(open('vgg.h5', 'rb'))
 
 
 def preprocess_image(image, target_size):
