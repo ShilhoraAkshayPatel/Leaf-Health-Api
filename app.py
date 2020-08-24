@@ -43,7 +43,7 @@ def predict():
     processed_image = preprocess_image(image, target_size=(128, 128))
 
     prediction = model.predict(processed_image)
-    preclass = {0: "Parasitized", 1: "Uninfected"}
+    preclass = {0: "Apple_healthy", 1: "Apple_unhealthy",2:"Pepper_bell_healthy",3:"Pepper_bell_bacterial_spot",4:"Cherry_(includingsor)_healthy",5:"Cherry_(includingsor)_Powdery_mildew",6:"Corn_(Maize)_healthy",7:"Corn_(Maize)_unhealthy",8:"Grape_healthy",9:"Grape_unhealthy",10:"Peach_healthy",11:"Peach_bacterial_spot",12:"Potato_healthy",13:"Potato_unhealthy",14:"Strawberry_healthy",15:"Strawberry_Leaf_scorch",16:"Tamato_healthy",17:"Tamato_unhealthy"}
     response = preclass[np.argmax(prediction)]
     return jsonify(response)
 
