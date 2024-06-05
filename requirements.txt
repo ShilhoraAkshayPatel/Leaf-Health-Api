@@ -1,0 +1,13 @@
+itsdangerous
+Werkzeug
+Flask
+flask-cors
+gunicorn
+Keras
+Keras-Applications
+Keras-Preprocessing
+numpy
+pickle-mixin
+pickleshare
+tensorflow-cpu
+pillow
